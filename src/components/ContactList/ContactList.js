@@ -9,7 +9,7 @@ const ContactList = ({ contacts, onRemoveContact }) => (
     {contacts.map((contact) =>
       <CSSTransition
         key={contact.id}
-        timeout={500}
+        timeout={250}
         classNames={Fade}
       >
         <li className={s.contactItem} key={contact.id}>
